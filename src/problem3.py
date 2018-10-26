@@ -2,11 +2,11 @@
 Exam 3, problem 3.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, their colleagues,
-         and PUT_YOUR_NAME_HERE.  October, 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Jacob Ritenour.  October, 2018.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import testing_helper
-
+import time
 
 def main():
     """ Calls the   TEST   functions in this module. """
@@ -226,7 +226,12 @@ def problem3(seq_of_seq):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-
+    for k in range(len(seq_of_seq)):
+        sublist = seq_of_seq[k]
+        for j in range(len(sublist)):
+            if(is_prime(sublist[j])==True):
+                return sublist
+    return -1
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
