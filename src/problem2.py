@@ -94,12 +94,12 @@ def problem2(sequence):
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
     largest = 0
-    index = 0
+    index_of_largest = 0
     for k in range(len(sequence)):
         if(math.fabs(sequence[k])>largest):
             largest = math.fabs(sequence[k])
             index = k
-    return index
+    return index_of_largest
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
